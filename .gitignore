@@ -1,0 +1,8 @@
+# Local clones used as source material for the case studies.
+# They are not part of the deployed site.
+/Projects/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp

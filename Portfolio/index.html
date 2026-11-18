@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ellin — Systems &amp; Interfaces</title>
+  <meta name="description" content="Ellin builds software across systems, full-stack, mobile and hardware. Selected work: WebStudy, SimpleStudy, TeleJob, big-brother-fs, spark-reddit, my-bash and more.">
+  <meta name="theme-color" content="#f2efe7">
+  <meta property="og:title" content="Ellin — Systems &amp; Interfaces">
+  <meta property="og:description" content="From the file system to the interface. Selected software work across C, Python, TypeScript, Scala and SystemVerilog.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to selected work</a>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#top" aria-label="Ellin, back to top">
+      <span class="brand-mark">E</span>
+      <span class="brand-copy">
+        <strong>Ellin</strong>
+        <span>systems / interfaces</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="#work"><span>01</span>Work</a>
+      <a href="#approach"><span>02</span>Approach</a>
+      <a href="#toolkit"><span>03</span>Toolkit</a>
+      <a href="#contact"><span>04</span>Contact</a>
+      <a class="nav-github" href="https://github.com/Ellin-cenciado" target="_blank" rel="noopener noreferrer">
+        GitHub
+        <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 11 3M4 3h7v7"/></svg>
+      </a>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-toggle__label">Menu</span>
+      <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> Portfolio / 2025—2026</p>
+          <h1 id="hero-title">
+            <span class="hero-line"><span>From the</span></span>
+            <span class="hero-line"><span><em>file system</em></span></span>
+            <span class="hero-line"><span>to the interface.</span></span>
+          </h1>
+          <p class="lede">
+            I'm <strong>Ellin</strong>, a developer who likes the layer where abstraction stops
+            being magic. I've worked on a FAT32 filesystem in C, a Unix shell, an ALU in
+            SystemVerilog, and a study tracker that ships as a web app, a desktop app,
+            and a native Android app.
+          </p>
+          <div class="hero-actions">
+            <a class="button button--ink" href="#work">
+              See the work
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3l5 5-5 5"/></svg>
+            </a>
+            <a class="button button--ghost" href="https://github.com/Ellin-cenciado" target="_blank" rel="noopener noreferrer">
+              GitHub profile
+              <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 11 3M4 3h7v7"/></svg>
+            </a>
+          </div>
+
+          <dl class="hero-stats" aria-label="Portfolio summary">
+            <div>
+              <dt>08</dt>
+              <dd>selected projects</dd>
+            </div>
+            <div>
+              <dt>05</dt>
+              <dd>languages in use</dd>
+            </div>
+            <div>
+              <dt>470+</dt>
+              <dd>automated tests</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="stack-panel" aria-label="The technology stack, from silicon to interface">
+          <div class="stack-panel__head">
+            <span>THE STACK I WORK ACROSS</span>
+            <span>04 LAYERS</span>
+          </div>
+          <ol class="stack-list">
+            <li class="stack-layer">
+              <span class="stack-index">04</span>
+              <div class="stack-layer__body">
+                <span class="stack-kicker">Interface</span>
+                <strong>React · Electron · Android</strong>
+              </div>
+              <span class="stack-project">WebStudy</span>
+            </li>
+            <li class="stack-layer">
+              <span class="stack-index">03</span>
+              <div class="stack-layer__body">
+                <span class="stack-kicker">Services</span>
+                <strong>FastAPI · Flask · D-Bus</strong>
+              </div>
+              <span class="stack-project">SimpleStudy</span>
+            </li>
+            <li class="stack-layer">
+              <span class="stack-index">02</span>
+              <div class="stack-layer__body">
+                <span class="stack-kicker">Systems</span>
+                <strong>C · Linux · FUSE</strong>
+              </div>
+              <span class="stack-project">big-brother-fs</span>
+            </li>
+            <li class="stack-layer">
+              <span class="stack-index">01</span>
+              <div class="stack-layer__body">
+                <span class="stack-kicker">Silicon</span>
+                <strong>SystemVerilog · Vivado</strong>
+              </div>
+              <span class="stack-project">alu-sys-verilog</span>
+            </li>
+            <span class="stack-scan" aria-hidden="true"></span>
+          </ol>
+          <div class="stack-panel__foot">
+            <span>LOCAL-FIRST</span>
+            <span>OFFLINE-CAPABLE</span>
+            <span>TESTED</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-foot">
+        <span class="hero-foot__hint"><i aria-hidden="true"></i> Scroll to explore</span>
+        <span class="hero-foot__note">C → TypeScript → SystemVerilog</span>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>C</span><i></i><span>Python</span><i></i><span>TypeScript</span><i></i><span>Scala</span><i></i><span>SystemVerilog</span><i></i><span>React 19</span><i></i><span>FastAPI</span><i></i><span>FUSE</span><i></i><span>Spark</span><i></i><span>GTK4</span><i></i><span>D-Bus</span><i></i><span>Electron</span><i></i><span>Chaquopy</span><i></i><span>Vivado</span><i></i>
+        <span>C</span><i></i><span>Python</span><i></i><span>TypeScript</span><i></i><span>Scala</span><i></i><span>SystemVerilog</span><i></i><span>React 19</span><i></i><span>FastAPI</span><i></i><span>FUSE</span><i></i><span>Spark</span><i></i><span>GTK4</span><i></i><span>D-Bus</span><i></i><span>Electron</span><i></i><span>Chaquopy</span><i></i><span>Vivado</span><i></i>
+      </div>
+    </div>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <p class="eyebrow">01 / Selected work</p>
+        <h2 id="work-title">Eight projects.<br><em>Every layer.</em></h2>
+        <p class="section-intro">
+          Products, systems and experiments from the last two years. All eight
+          are public repositories I can walk through line by line.
+        </p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filters" role="group" aria-label="Filter projects by discipline">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All <span>8</span></button>
+          <button class="filter" type="button" data-filter="product" aria-pressed="false">Product <span>3</span></button>
+          <button class="filter" type="button" data-filter="systems" aria-pressed="false">Systems <span>3</span></button>
+          <button class="filter" type="button" data-filter="data" aria-pressed="false">Data &amp; AI <span>4</span></button>
+          <button class="filter" type="button" data-filter="hardware" aria-pressed="false">Hardware <span>1</span></button>
+        </div>
+        <p class="filter-count" id="filter-count" aria-live="polite">Showing all 8 projects</p>
+      </div>
+
+      <div class="project-grid" id="project-grid"></div>
+      <noscript>
+        <p class="noscript">
+          This index needs JavaScript to open case studies. You can browse all
+          eight repositories on <a href="https://github.com/Ellin-cenciado?tab=repositories">GitHub</a>.
+        </p>
+      </noscript>
+    </section>
+
+    <section class="approach" id="approach" aria-labelledby="approach-title">
+      <div class="approach-inner">
+        <div class="approach-head">
+          <p class="eyebrow eyebrow--light">02 / Approach</p>
+          <h2 id="approach-title">The model<br>is the <em>product.</em></h2>
+          <p class="approach-intro">
+            Features change. The shape of the state shouldn't. Across these
+            projects the same pattern keeps showing up: keep the domain rules
+            pure, draw a hard boundary around the platform, then test the places
+            where the two meet.
+          </p>
+        </div>
+
+        <div class="principle-grid">
+          <article class="principle">
+            <span class="principle-number">01</span>
+            <h3>Pure cores</h3>
+            <p>
+              SimpleStudy's ledger and checklist logic import no GTK, D-Bus or
+              SQLite. WebStudy reuses that same engine behind FastAPI, Electron
+              and Chaquopy. The rules stay in one place; the shells stay disposable.
+            </p>
+            <p class="principle-ref">SimpleStudy · WebStudy</p>
+          </article>
+          <article class="principle">
+            <span class="principle-number">02</span>
+            <h3>Honest boundaries</h3>
+            <p>
+              A FUSE filesystem lives or dies on memory-to-disk consistency. A
+              Telegram bot lives or dies on a proxy timeout. I design the failure
+              path explicitly instead of hoping the happy path holds.
+            </p>
+            <p class="principle-ref">big-brother-fs · TeleJob</p>
+          </article>
+          <article class="principle">
+            <span class="principle-number">03</span>
+            <h3>Tests as documentation</h3>
+            <p>
+              Fake clocks, temporary XDG directories, synthetic FAT images,
+              mocked syscalls and malformed-feed scenarios. The tests describe
+              the invariants better than a paragraph ever could.
+            </p>
+            <p class="principle-ref">470+ tests across the set</p>
+          </article>
+        </div>
+
+        <p class="approach-quote">
+          “Local-first, offline-capable, and <em>boring on purpose</em> where it matters.”
+        </p>
+      </div>
+    </section>
+
+    <section class="section toolkit" id="toolkit" aria-labelledby="toolkit-title">
+      <div class="section-head">
+        <p class="eyebrow">03 / Toolkit</p>
+        <h2 id="toolkit-title">Fluent across<br><em>the boundary.</em></h2>
+        <p class="section-intro">
+          I pick tools to fit the layer, not the other way around. This is the
+          working set the repositories actually use.
+        </p>
+      </div>
+
+      <div class="toolkit-grid">
+        <div class="tool-group">
+          <h3>Languages</h3>
+          <ul>
+            <li>C</li>
+            <li>Python</li>
+            <li>TypeScript</li>
+            <li>Scala</li>
+            <li>SystemVerilog</li>
+            <li>SQL · Bash</li>
+          </ul>
+        </div>
+        <div class="tool-group">
+          <h3>Interfaces</h3>
+          <ul>
+            <li>React 19</li>
+            <li>React Native</li>
+            <li>GTK4 / libadwaita</li>
+            <li>Vite / Tailwind</li>
+            <li>Electron</li>
+          </ul>
+        </div>
+        <div class="tool-group">
+          <h3>Services</h3>
+          <ul>
+            <li>FastAPI</li>
+            <li>Flask</li>
+            <li>SSE / REST</li>
+            <li>D-Bus</li>
+            <li>systemd</li>
+          </ul>
+        </div>
+        <div class="tool-group">
+          <h3>Systems</h3>
+          <ul>
+            <li>Linux / POSIX</li>
+            <li>FUSE</li>
+            <li>FAT32</li>
+            <li>Processes &amp; pipes</li>
+            <li>PyInstaller</li>
+          </ul>
+        </div>
+        <div class="tool-group">
+          <h3>Data &amp; AI</h3>
+          <ul>
+            <li>SQLite</li>
+            <li>XDG storage</li>
+            <li>Apache Spark</li>
+            <li>json4s / scopt</li>
+            <li>Gemini / local LLMs</li>
+          </ul>
+        </div>
+        <div class="tool-group">
+          <h3>Tooling</h3>
+          <ul>
+            <li>Git / GitHub Actions</li>
+            <li>OpenCode / agentic workflows</li>
+            <li>Vitest / Jest / unittest</li>
+            <li>Check / Valgrind</li>
+            <li>sbt</li>
+            <li>Vivado</li>
+            <li>Android SDK / Chaquopy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <p class="eyebrow">04 / Contact</p>
+        <h2 id="contact-title">Have a hard<br><em>problem?</em></h2>
+        <p class="contact-copy">
+          I'm interested in systems, developer tools and products that have to
+          work offline. If that sounds like your team, the code is the best
+          introduction — start with WebStudy or big-brother-fs.
+        </p>
+        <div class="contact-link-wrap">
+          <a class="contact-link" href="https://github.com/Ellin-cenciado" target="_blank" rel="noopener noreferrer">
+            <span>github.com/Ellin-cenciado</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 20 4M6 4h14v14"/></svg>
+          </a>
+        </div>
+        <div class="contact-foot">
+          <span>Spanish / English</span>
+          <span>Repositories public on GitHub</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a class="brand brand--footer" href="#top" aria-label="Ellin, back to top">
+        <span class="brand-mark">E</span>
+        <span class="brand-copy"><strong>Ellin</strong><span>systems / interfaces</span></span>
+      </a>
+      <a class="footer-top-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Ellin. Built as a static site.</span>
+      <span>Instrument Serif · Space Grotesk · JetBrains Mono</span>
+      <span>No trackers. No cookies.</span>
+    </div>
+  </footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-shell">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close case study">
+        <span>Close</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg>
+      </button>
+
+      <div class="dialog-head">
+        <p class="eyebrow" id="dialog-meta"></p>
+        <h2 id="dialog-title"></h2>
+        <p class="dialog-tagline" id="dialog-tagline"></p>
+      </div>
+
+      <div class="dialog-layout">
+        <div class="dialog-main">
+          <div class="dialog-plate" id="dialog-plate"></div>
+
+          <div class="dialog-section">
+            <h3>What it is</h3>
+            <p id="dialog-description"></p>
+          </div>
+
+          <div class="dialog-section">
+            <h3>Engineering notes</h3>
+            <ul class="dialog-highlights" id="dialog-highlights"></ul>
+          </div>
+        </div>
+
+        <aside class="dialog-side">
+          <dl class="dialog-stats" id="dialog-stats"></dl>
+
+          <div class="dialog-side-block">
+            <h3>Stack</h3>
+            <ul class="dialog-stack" id="dialog-stack"></ul>
+          </div>
+
+          <div class="dialog-side-block">
+            <h3>Context</h3>
+            <p class="dialog-role" id="dialog-role"></p>
+          </div>
+
+          <a class="button button--ink dialog-repo" id="dialog-repo" href="https://github.com/Ellin-cenciado" target="_blank" rel="noopener noreferrer">
+            View repository
+            <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 11 3M4 3h7v7"/></svg>
+          </a>
+        </aside>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
